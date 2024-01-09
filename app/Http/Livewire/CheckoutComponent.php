@@ -200,15 +200,6 @@ class CheckoutComponent extends Component
             // $stripe=Stripe::make(env('STRIPE_SECRET'));
             $stripe= Stripe::make(env('STRIPE_SECRET'));
 
-
-
-
-
-
-
-
-
-
             try{
                 $token=$stripe->tokens()->create([
                     'card'=>[
@@ -276,7 +267,7 @@ class CheckoutComponent extends Component
             }
 
         }
-        $this->sendOrderConfirmationMail($order);
+        // $this->sendOrderConfirmationMail($order);
 
         $this->thankyou=1;
         Cart::instance('cart')->destroy();
@@ -314,7 +305,7 @@ class CheckoutComponent extends Component
     }
 
 
-    
+
     public function makeTransaction($order_id,$status){
         $transaction=new Transaction();
         $transaction->user_id=Auth::user()->id;

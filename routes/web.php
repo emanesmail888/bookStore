@@ -107,8 +107,6 @@ Route::get('/admin/coupon/add',AdminAddCouponsComponent::class)->name('admin.add
 Route::get('/admin/coupon/edit/{coupon_id}',AdminEditCouponsComponent::class)->name('admin.editCoupon');
 Route::get('/admin/contact-us', AdminContactComponent::class)->name('admin.contact');
 Route::get('/admin/setting', AdminSettingComponent::class)->name('admin.settings');
-
-
 Route::get('/admin/books',AdminBookComponent::class)->name('admin.books');
 Route::get('/admin/book/add',AdminAddBookComponent::class)->name('admin.addBook');
 Route::get('/admin/book/edit/{book_slug}',AdminEditBookComponent::class)->name('admin.editBook');

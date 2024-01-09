@@ -6,7 +6,7 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>Add New Book</h5>
+                            <h5>Edit New Book</h5>
 
                         </div><!-- col-md-6 1-->
                         <div class="col-md-6">

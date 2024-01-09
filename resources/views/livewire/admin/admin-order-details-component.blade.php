@@ -57,7 +57,7 @@
         </div><!-- col-md-12 -->
 
     </div><!-- row -->
-    
+
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
@@ -378,21 +378,23 @@
                             <tr>
 
                                 <th>Transaction Mode</th>
-                                <td>{{ $order->transaction->mode }}</td>
+
+                                <td>{{ $order->transaction?$order->transaction->mode:''}}</td>
 
                             </tr>
 
                             <tr>
 
                                 <th>status</th>
-                                <td>{{ $order->transaction->status }}</td>
+                                <td>{{$order->transaction ?$order->transaction->status:''}}</td>
 
                             </tr>
 
                             <tr>
 
                                 <th>Transaction Date</th>
-                                <td>{{ $order->transaction->created_at }}</td>
+                                <td>{{$order->transaction?$order->transaction->created_at:''}}</td>
+
 
                             </tr>
                         </tbody>

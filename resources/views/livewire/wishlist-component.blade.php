@@ -5,7 +5,7 @@
         <div class="wrap-breadcrumb">
             <ul>
                 <li class="item-link"><a href="#" class="link">home</a></li>
-                <li class="item-link"><span>shop</span></li>
+                <li class="item-link"><span>wishlist</span></li>
             </ul>
         </div>
         <div class="row">
@@ -14,7 +14,7 @@
 
                 <div class="banner-shop">
                     <a href="#" class="banner-link">
-                        <figure><img src="assets/images/shop-banner.jpg" alt=""></figure>
+                        <figure><img src="{{asset('assets/images/wishlist.png')}}" class="w-100" alt=""></figure>
                     </a>
                 </div>
 
